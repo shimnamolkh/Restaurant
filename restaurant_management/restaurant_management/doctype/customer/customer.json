@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Cust.##",
+ "creation": "2022-10-11 17:16:35.115064",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_id",
+  "available_restaurant",
+  "book_table",
+  "space_rent",
+  "all_menu_items_section",
+  "menu_check",
+  "menu_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Int",
+   "label": "Customer Id"
+  },
+  {
+   "fieldname": "available_restaurant",
+   "fieldtype": "Link",
+   "label": "Available Restaurant",
+   "options": "Available Restaurant"
+  },
+  {
+   "fieldname": "book_table",
+   "fieldtype": "Link",
+   "label": "Book Table",
+   "options": "Available Tables"
+  },
+  {
+   "fieldname": "space_rent",
+   "fieldtype": "Int",
+   "label": "Space rent"
+  },
+  {
+   "default": "0",
+   "fieldname": "menu_table",
+   "fieldtype": "Table",
+   "label": "Menu Table",
+   "options": "Menu"
+  },
+  {
+   "fieldname": "menu_check",
+   "fieldtype": "Button",
+   "label": "Menu Check"
+  },
+  {
+   "fieldname": "all_menu_items_section",
+   "fieldtype": "Section Break",
+   "label": "ALL menu items"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-18 16:25:27.327687",
+ "modified_by": "Administrator",
+ "module": "Restaurant Management",
+ "name": "Customer",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

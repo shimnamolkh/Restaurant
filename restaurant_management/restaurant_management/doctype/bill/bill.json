@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Bill.##",
+ "creation": "2022-10-11 17:38:45.206000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bill_id",
+  "order_link",
+  "customer_link",
+  "order_id",
+  "customer_id",
+  "item_id",
+  "total",
+  "space_rent",
+  "actual_total",
+  "order_delivered"
+ ],
+ "fields": [
+  {
+   "fieldname": "bill_id",
+   "fieldtype": "Int",
+   "label": "Bill Id"
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Int",
+   "label": "Order Id"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Int",
+   "label": "Customer Id"
+  },
+  {
+   "fieldname": "item_id",
+   "fieldtype": "Data",
+   "label": "Item Id"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total"
+  },
+  {
+   "fieldname": "space_rent",
+   "fieldtype": "Int",
+   "label": "space rent"
+  },
+  {
+   "fieldname": "actual_total",
+   "fieldtype": "Data",
+   "label": "Actual Total"
+  },
+  {
+   "default": "0",
+   "fieldname": "order_delivered",
+   "fieldtype": "Check",
+   "label": "Order Delivered"
+  },
+  {
+   "fieldname": "customer_link",
+   "fieldtype": "Link",
+   "label": "Customer Link",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "order_link",
+   "fieldtype": "Link",
+   "label": "Order Link ",
+   "options": "Order"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-13 12:13:08.738244",
+ "modified_by": "Administrator",
+ "module": "Restaurant Management",
+ "name": "Bill",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

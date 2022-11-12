@@ -1,0 +1,47 @@
+<!-- this is a sample default web page template
+{%  extends "templates/web.html" %}
+
+{% block page_content %}
+
+<div class="py-20 row">
+
+    <div class="col-sm-2">
+
+        <img alt="{{ name }}" src="{{ image }}">
+
+    </div>
+
+    <div class="col">
+
+        <h1>{{ title }}</h1>
+
+        <p class="lead"> {{ special_menu }}</p>
+
+        <div>
+
+            {%- if status == 'Open' -%}
+
+            <span class="badge badge-success">Open</span>
+            {%- elif status == 'Closed' -%}
+
+            <span class="badge badge-primary">Closed</span>
+
+            {%- endif -%}
+
+        </div>
+
+        <div class="mt-4">
+
+            <div>Phone: <strong>{{ phone_number }}</strong></div>
+
+            <div>Email: <strong>{{ email }}</strong></div>
+
+        </div>
+
+        <p>{{ opening_hours }}</p>
+
+    </div>
+
+</div>
+
+{% endblock %} -->

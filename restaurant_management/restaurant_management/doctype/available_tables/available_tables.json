@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "AT.##",
+ "creation": "2022-10-11 23:04:39.209590",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "number",
+  "type",
+  "rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "number",
+   "fieldtype": "Int",
+   "label": "Number"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Int",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Int",
+   "label": "Id"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-11 23:36:02.045740",
+ "modified_by": "Administrator",
+ "module": "Restaurant Management",
+ "name": "Available Tables",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

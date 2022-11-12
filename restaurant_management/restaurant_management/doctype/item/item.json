@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ITEM.##",
+ "creation": "2022-10-11 20:41:23.433100",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "menu_link_field",
+  "customer_link_field",
+  "customer_id",
+  "item_id",
+  "table_id",
+  "column_break_5",
+  "name1",
+  "status",
+  "price",
+  "description",
+  "todays_special"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_id",
+   "fieldtype": "Data",
+   "label": "Item Id"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Int",
+   "label": "Price"
+  },
+  {
+   "fieldname": "menu_link_field",
+   "fieldtype": "Link",
+   "label": "Menu Link Field",
+   "options": "Menu"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Int",
+   "label": "Customer id"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "table_id",
+   "fieldtype": "Data",
+   "label": "Table ID"
+  },
+  {
+   "fieldname": "customer_link_field",
+   "fieldtype": "Link",
+   "label": "Customer Link Field",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "todays_special",
+   "fieldtype": "Data",
+   "label": "Todays Special"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-10-17 10:45:43.749542",
+ "modified_by": "Administrator",
+ "module": "Restaurant Management",
+ "name": "Item",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

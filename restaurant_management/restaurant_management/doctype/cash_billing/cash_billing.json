@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-11 17:34:41.266407",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bill_link",
+  "customer_id",
+  "actual_total",
+  "feedback",
+  "payment_complete",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Int",
+   "label": "Customer Id"
+  },
+  {
+   "fieldname": "actual_total",
+   "fieldtype": "Int",
+   "label": "Actual Total"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cash Billing",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "payment_complete",
+   "fieldtype": "Check",
+   "label": "Payment Complete"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Small Text",
+   "label": "Feedback"
+  },
+  {
+   "fieldname": "bill_link",
+   "fieldtype": "Link",
+   "label": "Bill Link",
+   "options": "Bill"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-10-13 12:58:58.122305",
+ "modified_by": "Administrator",
+ "module": "Restaurant Management",
+ "name": "Cash Billing",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

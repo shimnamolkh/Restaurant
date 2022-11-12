@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "Res.##",
+ "creation": "2022-10-11 11:07:10.266650",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "restaurant",
+  "restaurant_id",
+  "status",
+  "column_break_4",
+  "image",
+  "phone_number",
+  "section_break_10",
+  "email",
+  "special_menu",
+  "column_break_10",
+  "opening_hours",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "restaurant",
+   "fieldtype": "Data",
+   "label": "Restaurant",
+   "unique": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nClosed"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "special_menu",
+   "fieldtype": "Data",
+   "label": "Special Menu "
+  },
+  {
+   "fieldname": "opening_hours",
+   "fieldtype": "Data",
+   "label": "Opening Hours"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "restaurant_id",
+   "fieldtype": "Data",
+   "label": "Restaurant_Id"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2022-10-14 10:11:52.948907",
+ "modified_by": "Administrator",
+ "module": "Restaurant Management",
+ "name": "Restaurant",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "Restaurant",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

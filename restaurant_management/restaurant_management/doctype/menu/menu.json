@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:menu_name",
+ "creation": "2022-10-11 20:39:34.193410",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "menu_id",
+  "menu_name",
+  "image",
+  "type",
+  "description",
+  "status",
+  "price",
+  "route",
+  "published",
+  "item_link_field",
+  "order_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "menu_id",
+   "fieldtype": "Data",
+   "label": "Menu Id"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Break fast\nLunch\nDinner"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nFinished"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Int",
+   "label": "Price"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "item_link_field",
+   "fieldtype": "Link",
+   "label": "Item Link field",
+   "options": "Item"
+  },
+  {
+   "fieldname": "menu_name",
+   "fieldtype": "Data",
+   "label": "Menu Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "order_table",
+   "fieldtype": "Table",
+   "label": "Order Table",
+   "options": "Order"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2022-10-19 16:51:39.747142",
+ "modified_by": "Administrator",
+ "module": "Restaurant Management",
+ "name": "Menu",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "Menu",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

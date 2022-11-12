@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Order.##",
+ "creation": "2022-10-11 20:54:15.599046",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_id",
+  "item_link_field",
+  "item_id",
+  "customer_id",
+  "column_break_5",
+  "table",
+  "order_date",
+  "order_status",
+  "item_quantity",
+  "item_price",
+  "item_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Int",
+   "label": "Order Id"
+  },
+  {
+   "fieldname": "order_status",
+   "fieldtype": "Select",
+   "label": "Order Status",
+   "options": "Delivered\nPending"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "item_id",
+   "fieldtype": "Data",
+   "label": "Item Id"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Int",
+   "label": "Customer id"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Data",
+   "label": "Table"
+  },
+  {
+   "fieldname": "item_link_field",
+   "fieldtype": "Link",
+   "label": "Item Link FIELD",
+   "options": "Item"
+  },
+  {
+   "fieldname": "item_price",
+   "fieldtype": "Int",
+   "label": "Item Price"
+  },
+  {
+   "fieldname": "item_quantity",
+   "fieldtype": "Int",
+   "label": "Item Quantity"
+  },
+  {
+   "fieldname": "item_total",
+   "fieldtype": "Int",
+   "label": "Item Total"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-23 12:26:12.627430",
+ "modified_by": "Administrator",
+ "module": "Restaurant Management",
+ "name": "Order",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
